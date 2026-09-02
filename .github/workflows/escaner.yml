@@ -1,0 +1,15 @@
+name: Escáner del proyecto
+on:
+  pull_request:
+    branches: [ main, dev ]
+
+jobs:
+  escanear:
+    name: Prueba 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Analizando sinos vitales del proyecto...
+        run: |
+          echo "Realizando escáner..."
+          sleep 10
+          echo "Prueba finalizada"
